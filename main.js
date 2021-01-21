@@ -36,8 +36,7 @@ let anotherObject = {
     ]
 }
 
-// console.log(anotherObject.meals[3])
-
+//4 Array of objects
 let objOne = {
     name: "sean",
     jobTitle: "student"
@@ -53,10 +52,31 @@ let objThree = {
     jobTitle: "teacher"
 };
 
-let arr = [objOne, objTwo, objThree];
-
-for (let element of arr) {
-    console.log(element.name, element.jobTitle)
+let objFour = {
+    name: "bossman",
+    jobTitle: "boss"
 }
+
+let arr = [objOne, objTwo, objThree, objFour];
+
+
+//5 Properties that aren't there
+objOne["boss"] = "bossman"
+objTwo["boss"] = "bossman"
+objThree["boss"] = "bossman"
+
+
+// for (let num of arr) {
+
+//     if (num.boss === undefined) {
+//         console.log(`${num.jobTitle} ${num.name} doesn't report to anybody`)
+//     }
+//     else {
+//     console.log(`${num.jobTitle} ${num.name} reports to ${num.boss}`)
+//     }
+// }
+
+
+//6 Cracking the code
 
 
